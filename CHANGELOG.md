@@ -60,3 +60,5 @@ tests/test_stdunc.py ...........................................................
 ================================================= 85 passed in 0.16s =================================================
 nox > Session tests was successful.
 ⋊> ~/D/H/ci-exercise-mr1884 on main ⨯
+
+It should be .github/workflows/ci.yml, not workflow
