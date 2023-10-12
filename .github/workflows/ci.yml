@@ -35,4 +35,4 @@ jobs:
       run: pip install -e .[test]
 
     - name: Run tests
-      run: pytest
+      run: nox -s tests
