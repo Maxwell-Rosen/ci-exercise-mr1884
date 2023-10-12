@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-
-    - name: Format code
+    - name: Install pre-commit
       run: pip install pre-commit
+    - name: Format code
       run: pre-commit run --all-files
 
   tests:
