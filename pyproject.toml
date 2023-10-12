@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools", "wheel", "hatchling"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ci-exercise"
+version = "0.1.0"
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+test = ["pytest", "uncertainties"]
+
+[tool.ruff]
+select = ["E", "F", "W", "B", "I","RUF","UP"]
+ignore = []
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+per-file-ignores = {}
+
+line-length = 88 # Same as Black.
+
+
