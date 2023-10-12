@@ -30,3 +30,12 @@ ruff.....................................................................Failed
 
 src/unc/__init__.py:15:89: E501 Line too long (91 > 88 characters)
 Found 6 errors (5 fixed, 1 remaining).
+
+trim trailing whitespace.................................................Passed
+black....................................................................Passed
+ruff.....................................................................Failed
+- hook id: ruff
+- exit code: 1
+
+src/unc/__init__.py:15:89: E501 Line too long (91 > 88 characters)
+Found 1 error.

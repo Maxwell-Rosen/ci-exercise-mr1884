@@ -12,7 +12,8 @@ class LabUnc:
         return a + b
 
     rounding_rule = 1.0
-    "This is the number to round at for display, lab rule is 1, particle physics uses 3.54"
+    "This is the number to round at for display,"
+    "lab rule is 1, particle physics uses 3.54"
 
     def __init__(self, number: float, uncertainty: float = 0.0) -> None:
         self.n = number
